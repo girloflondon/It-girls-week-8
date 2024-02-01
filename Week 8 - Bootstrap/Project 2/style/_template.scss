@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-Light.ttf"), format("truetype");
+  font-weight: 300;
+  font-style: light;
+}
+
+@font-face {
+  font-family: "Intro-Regular";
+  src: url("../fonts/intro-regular.ttf"), format("truetype");
+  font-weight: 400;
+  font-style: regular;
+}
+
+$font1: "Intro-Regular", sans-serif;
+$font2: "Roboto Slab", sans-serif;
+
+$color1: #5222d0;
+$color2: #ec615b;
+
+%grid-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin button($width, $height, $size) {
+  text-align: center;
+  font-family: $font1;
+  font-weight: bold;
+  border-radius: 100px;
+  color: #fff;
+  background-color: $color1;
+  width: $width;
+  height: $height;
+  font-size: $size;
+}
+
+%header-text {
+  font-family: $font1;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+@mixin item-header($size, $line) {
+  @extend %header-text;
+  font-size: $size;
+  line-height: $line;
+}
+
+%paragraph-text {
+  font-family: $font2;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}

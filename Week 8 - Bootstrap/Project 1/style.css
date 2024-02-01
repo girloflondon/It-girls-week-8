@@ -1,0 +1,46 @@
+body {
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: #343a40;
+}
+
+header {
+  height: 20%;
+}
+
+.bg-lightgrey {
+  background-color: #e9ecef !important;
+}
+
+.mt-1 {
+  margin-top: 1.5rem !important;
+}
+
+.p-1 {
+  padding: 3rem 2rem !important;
+}
+
+h1 {
+  font-size: calc(3.1rem + 1.5vw) !important;
+}
+
+.card {
+  max-width: 60vw !important;
+  margin: 0 auto;
+}
+
+.card-img-top {
+  background-color: #cccccc;
+}
+
+.card-footer {
+  background-color: #f7f7f7;
+}
+
+footer {
+  height: 12vh;
+}

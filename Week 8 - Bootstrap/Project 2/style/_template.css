@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-Light.ttf"), format("truetype");
+  font-weight: 300;
+  font-style: light;
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url("../fonts/intro-regular.ttf"), format("truetype");
+  font-weight: 400;
+  font-style: regular;
+}/*# sourceMappingURL=_template.css.map */

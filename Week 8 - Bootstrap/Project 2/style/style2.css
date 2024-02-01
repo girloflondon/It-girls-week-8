@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-Light.ttf"), format("truetype");
+  font-weight: 300;
+  font-style: light;
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url("../fonts/intro-regular.ttf"), format("truetype");
+  font-weight: 400;
+  font-style: regular;
+}
+.main .main__header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main__block .main-block__content .header, .main__block .main-block__header {
+  font-family: "Intro-Regular", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+.main__menu .main-menu__item, .main-block__subscription .subscription-form__input, .main__block .main-block__content .text {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+/* header */
+.main {
+  padding: 3vh 5vw;
+}
+.main .main__header {
+  align-items: center;
+}
+.main .main__header .main__button {
+  padding: 12px 16px;
+  justify-self: end;
+  text-align: center;
+  font-family: "Intro-Regular", sans-serif;
+  font-weight: bold;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #5222d0;
+  width: 115px;
+  height: 38px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+.main .main__header .main__button .main__button-icon {
+  align-self: baseline;
+}
+
+/* main section */
+.main__block {
+  padding: 8vh 5vw 0 5vw;
+}
+.main__block .main-block__content {
+  padding-top: 3vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 365px);
+  /*grid-template-rows: repeat(2, 1fr);*/
+  grid-gap: 30px;
+  justify-content: space-around;
+}
+.main__block .main-block__content .header {
+  font-size: 30px;
+  line-height: 36px;
+  padding-top: 23px;
+}
+.main-block__subscription {
+  background-color: #ec615b;
+  width: 365px;
+  height: 233px;
+  padding: 23px 18px;
+  box-sizing: border-box;
+}
+.main-block__subscription .header {
+  color: #fff;
+}
+.main-block__subscription .subscription-form__input {
+  margin-top: 6px;
+  padding-left: 15px;
+  width: 323px;
+  border: none;
+  box-sizing: border-box;
+}
+.main-block__subscription .subscription__button {
+  text-align: center;
+  font-family: "Intro-Regular", sans-serif;
+  font-weight: bold;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #5222d0;
+  width: 135px;
+  height: 38px;
+  font-size: 13px;
+  margin-top: 23px;
+  display: grid;
+  align-items: center;
+}
+
+/* bottom menu */
+.main__menu {
+  padding: 5vh 5vw;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: 30px;
+}
+.main__menu .main-menu__item {
+  text-decoration: none;
+  color: #000;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .main__block {
+    padding: 8vh 2vw 0 2vw;
+    text-align: center;
+  }
+  .main__block .main-block__header {
+    font-size: 50px;
+  }
+  .main__menu {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-left: 0vw;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style2.css.map */
